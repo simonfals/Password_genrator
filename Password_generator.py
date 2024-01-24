@@ -13,15 +13,15 @@ nr_numbers = int(input(f"How many numbers would you like?\n"))
 password = []
 
 for char in range(1, nr_letters + 1):
-    password += random.choice(letters)
+    password_list += random.choice(letters)
 for char in range(1, nr_symbols + 1):
-    password += random.choice(symbols)
+    password_list += random.choice(symbols)
 for char in range(1, nr_numbers + 1):
-    password += random.choice(numbers)
+    password_list += random.choice(numbers)
 
-random.shuffle(password)
+random.shuffle(password_list)
 
-fom = ""
-for char in password:
-    fom += char
-print(fom)
+password = ""
+for char in password_list:
+    password += char
+print(password)
